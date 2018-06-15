@@ -14,6 +14,13 @@
 		D814B6BB20D162EF00095077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D814B6B920D162EF00095077 /* LaunchScreen.storyboard */; };
 		D814B6C620D162EF00095077 /* HorizontalScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6C520D162EF00095077 /* HorizontalScrollTests.swift */; };
 		D814B6D120D162EF00095077 /* HorizontalScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6D020D162EF00095077 /* HorizontalScrollUITests.swift */; };
+		D814B6DF20D16E3D00095077 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6DE20D16E3D00095077 /* ImageCollectionViewController.swift */; };
+		D814B6E120D16EB200095077 /* HorizontalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E020D16EB200095077 /* HorizontalCollectionViewController.swift */; };
+		D814B6E320D1A81700095077 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E220D1A81700095077 /* CustomCollectionViewCell.swift */; };
+		D814B6E520D2BC2000095077 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E420D2BC2000095077 /* StartViewController.swift */; };
+		D814B6E720D2BF8100095077 /* ButtonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E620D2BF8100095077 /* ButtonCollectionViewController.swift */; };
+		D814B6E920D2CE0500095077 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E820D2CE0500095077 /* GridLayout.swift */; };
+		D814B6EB20D2F26F00095077 /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6EA20D2F26F00095077 /* ListLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		D814B6CC20D162EF00095077 /* HorizontalScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizontalScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D814B6D020D162EF00095077 /* HorizontalScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollUITests.swift; sourceTree = "<group>"; };
 		D814B6D220D162EF00095077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D814B6DE20D16E3D00095077 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		D814B6E020D16EB200095077 /* HorizontalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewController.swift; sourceTree = "<group>"; };
+		D814B6E220D1A81700095077 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		D814B6E420D2BC2000095077 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D814B6E620D2BF8100095077 /* ButtonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewController.swift; sourceTree = "<group>"; };
+		D814B6E820D2CE0500095077 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		D814B6EA20D2F26F00095077 /* ListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,13 @@
 			children = (
 				D814B6B020D162ED00095077 /* AppDelegate.swift */,
 				D814B6B220D162ED00095077 /* ViewController.swift */,
+				D814B6E420D2BC2000095077 /* StartViewController.swift */,
+				D814B6E620D2BF8100095077 /* ButtonCollectionViewController.swift */,
+				D814B6DE20D16E3D00095077 /* ImageCollectionViewController.swift */,
+				D814B6E020D16EB200095077 /* HorizontalCollectionViewController.swift */,
+				D814B6E220D1A81700095077 /* CustomCollectionViewCell.swift */,
+				D814B6E820D2CE0500095077 /* GridLayout.swift */,
+				D814B6EA20D2F26F00095077 /* ListLayout.swift */,
 				D814B6B420D162ED00095077 /* Main.storyboard */,
 				D814B6B720D162EF00095077 /* Assets.xcassets */,
 				D814B6B920D162EF00095077 /* LaunchScreen.storyboard */,
@@ -256,8 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D814B6EB20D2F26F00095077 /* ListLayout.swift in Sources */,
+				D814B6E120D16EB200095077 /* HorizontalCollectionViewController.swift in Sources */,
+				D814B6E320D1A81700095077 /* CustomCollectionViewCell.swift in Sources */,
+				D814B6DF20D16E3D00095077 /* ImageCollectionViewController.swift in Sources */,
 				D814B6B320D162ED00095077 /* ViewController.swift in Sources */,
+				D814B6E720D2BF8100095077 /* ButtonCollectionViewController.swift in Sources */,
 				D814B6B120D162ED00095077 /* AppDelegate.swift in Sources */,
+				D814B6E520D2BC2000095077 /* StartViewController.swift in Sources */,
+				D814B6E920D2CE0500095077 /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
