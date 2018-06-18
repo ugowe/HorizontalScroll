@@ -16,10 +16,9 @@ class ButtonCollectionViewController: UICollectionViewController {
 	
 	private let reuseIdentifier = "ButtonCell"
 	private let itemsPerRow: CGFloat = 2
-	
 
-	var listLayout: ListLayout!
 	var gridLayout: GridLayout!
+    var navController: UINavigationController?
 	
 	
     override func viewDidLoad() {
@@ -93,6 +92,13 @@ class ButtonCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cameraVC: CameraViewController = storyboard?.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
+//        let navController = UINavigationController(rootViewController: cameraVC)
+        self.navigationController?.pushViewController(cameraVC, animated: true)
+        
+    }
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {

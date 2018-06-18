@@ -14,7 +14,6 @@ class StartViewController: UIViewController {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -28,7 +27,6 @@ class StartViewController: UIViewController {
 	// In a storyboard-based application, you will often want to do a little preparation before navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "toButtonView", let nextScene = segue.destination as? ButtonCollectionViewController {
-			print("The number is \(Int(numberTextField.text!))")
 			nextScene.buttonCount = Int(numberTextField.text!)
 			
 		}
