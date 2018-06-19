@@ -97,8 +97,8 @@ class ButtonCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let cameraVC: CameraViewController = storyboard?.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
-        self.navigationController?.pushViewController(cameraVC, animated: true)
+        let parentVC: ParentViewController = storyboard?.instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+        self.navigationController?.pushViewController(parentVC, animated: true)
         
     }
     /*

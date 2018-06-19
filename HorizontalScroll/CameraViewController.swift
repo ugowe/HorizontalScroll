@@ -14,11 +14,16 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nextButtonLabel: UIButton!
     @IBOutlet weak var backButtonLabel: UIButton!
-    
+	
+	
     override func viewDidLoad() {
 		super.viewDidLoad()
 		
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+		
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -27,17 +32,20 @@ class CameraViewController: UIViewController {
 	}
     
 	@IBAction func backButtonTapped(_ sender: Any) {
-		self.performSegue(withIdentifier: "unwindToButtonView", sender: self)
+		self.navigationController?.popViewController(animated: true)
 	}
 	
     @IBAction func nextButtonTapped(_ sender: Any) {
-		let cameraVC: CameraViewController = storyboard?.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
-//		cameraVC.titleLabel.text = "Select Overlay"
-		cameraVC.view.backgroundColor = .blue
 		
-		self.navigationController?.pushViewController(cameraVC, animated: true)
+		let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//		let greenScreenVC = storyboard.instantiateInitialViewController()
+		
+		let greenScreenVC = GreenScreenViewController()
+		
+		self.navigationController?.pushViewController(greenScreenVC, animated: true)
     }
-    
+	
+
     
 
 

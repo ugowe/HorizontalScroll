@@ -20,7 +20,12 @@
 		D814B6E520D2BC2000095077 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E420D2BC2000095077 /* StartViewController.swift */; };
 		D814B6E720D2BF8100095077 /* ButtonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E620D2BF8100095077 /* ButtonCollectionViewController.swift */; };
 		D814B6E920D2CE0500095077 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814B6E820D2CE0500095077 /* GridLayout.swift */; };
-		D87BB30F20D957E00049775B /* ImageCustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87BB30E20D957E00049775B /* ImageCustomizationView.xib */; };
+		D87BB31320D96B2A0049775B /* GreenScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BB31220D96B2A0049775B /* GreenScreenViewController.swift */; };
+		D87BB31520D96B5C0049775B /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BB31420D96B5C0049775B /* OverlayViewController.swift */; };
+		D87BB31D20D9A1E80049775B /* ImageCustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87BB31B20D9A1E80049775B /* ImageCustomizationView.xib */; };
+		D87BB31F20D9A7D60049775B /* ImageCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87BB31E20D9A7D60049775B /* ImageCollectionView.xib */; };
+		D87BB32120D9AF640049775B /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BB32020D9AF640049775B /* ParentViewController.swift */; };
+		D87BB32320D9B2DB0049775B /* ImageCustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BB32220D9B2DB0049775B /* ImageCustomizationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +65,12 @@
 		D814B6E420D2BC2000095077 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D814B6E620D2BF8100095077 /* ButtonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewController.swift; sourceTree = "<group>"; };
 		D814B6E820D2CE0500095077 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
-		D87BB30E20D957E00049775B /* ImageCustomizationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCustomizationView.xib; sourceTree = "<group>"; };
+		D87BB31220D96B2A0049775B /* GreenScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenScreenViewController.swift; sourceTree = "<group>"; };
+		D87BB31420D96B5C0049775B /* OverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		D87BB31B20D9A1E80049775B /* ImageCustomizationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCustomizationView.xib; sourceTree = "<group>"; };
+		D87BB31E20D9A7D60049775B /* ImageCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionView.xib; sourceTree = "<group>"; };
+		D87BB32020D9AF640049775B /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		D87BB32220D9B2DB0049775B /* ImageCustomizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCustomizationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +125,13 @@
 				D814B6B220D162ED00095077 /* CameraViewController.swift */,
 				D814B6E420D2BC2000095077 /* StartViewController.swift */,
 				D814B6E620D2BF8100095077 /* ButtonCollectionViewController.swift */,
-				D87BB30E20D957E00049775B /* ImageCustomizationView.xib */,
+				D87BB32020D9AF640049775B /* ParentViewController.swift */,
+				D87BB32220D9B2DB0049775B /* ImageCustomizationView.swift */,
+				D87BB31B20D9A1E80049775B /* ImageCustomizationView.xib */,
 				D814B6DE20D16E3D00095077 /* ImageCollectionViewController.swift */,
+				D87BB31E20D9A7D60049775B /* ImageCollectionView.xib */,
+				D87BB31220D96B2A0049775B /* GreenScreenViewController.swift */,
+				D87BB31420D96B5C0049775B /* OverlayViewController.swift */,
 				D814B6E020D16EB200095077 /* HorizontalCollectionViewController.swift */,
 				D814B6E220D1A81700095077 /* CustomCollectionViewCell.swift */,
 				D814B6E820D2CE0500095077 /* GridLayout.swift */,
@@ -250,9 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87BB31F20D9A7D60049775B /* ImageCollectionView.xib in Resources */,
+				D87BB31D20D9A1E80049775B /* ImageCustomizationView.xib in Resources */,
 				D814B6BB20D162EF00095077 /* LaunchScreen.storyboard in Resources */,
 				D814B6B820D162EF00095077 /* Assets.xcassets in Resources */,
-				D87BB30F20D957E00049775B /* ImageCustomizationView.xib in Resources */,
 				D814B6B620D162ED00095077 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,11 +295,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D814B6E120D16EB200095077 /* HorizontalCollectionViewController.swift in Sources */,
+				D87BB31320D96B2A0049775B /* GreenScreenViewController.swift in Sources */,
+				D87BB32120D9AF640049775B /* ParentViewController.swift in Sources */,
 				D814B6E320D1A81700095077 /* CustomCollectionViewCell.swift in Sources */,
 				D814B6DF20D16E3D00095077 /* ImageCollectionViewController.swift in Sources */,
 				D814B6B320D162ED00095077 /* CameraViewController.swift in Sources */,
+				D87BB32320D9B2DB0049775B /* ImageCustomizationView.swift in Sources */,
 				D814B6E720D2BF8100095077 /* ButtonCollectionViewController.swift in Sources */,
 				D814B6B120D162ED00095077 /* AppDelegate.swift in Sources */,
+				D87BB31520D96B5C0049775B /* OverlayViewController.swift in Sources */,
 				D814B6E520D2BC2000095077 /* StartViewController.swift in Sources */,
 				D814B6E920D2CE0500095077 /* GridLayout.swift in Sources */,
 			);
