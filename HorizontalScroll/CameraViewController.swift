@@ -26,8 +26,16 @@ class CameraViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
     
-    
+	@IBAction func backButtonTapped(_ sender: Any) {
+		self.performSegue(withIdentifier: "unwindToButtonView", sender: self)
+	}
+	
     @IBAction func nextButtonTapped(_ sender: Any) {
+		let cameraVC: CameraViewController = storyboard?.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
+//		cameraVC.titleLabel.text = "Select Overlay"
+		cameraVC.view.backgroundColor = .blue
+		
+		self.navigationController?.pushViewController(cameraVC, animated: true)
     }
     
     

@@ -33,12 +33,13 @@ class ButtonCollectionViewController: UICollectionViewController {
 		
 		
 		self.collectionView!.collectionViewLayout = self.getLayout()
-//		listLayout = ListLayout()
-//		collectionView?.collectionViewLayout = listLayout
-//		collectionView?.reloadData()
 
         // Do any additional setup after loading the view.
     }
+	
+	override func viewDidAppear(_ animated: Bool) {
+		self.navigationController?.setNavigationBarHidden(false, animated: false)
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -79,7 +80,6 @@ class ButtonCollectionViewController: UICollectionViewController {
 	
 	func getLayout() -> UICollectionViewLayout {
 		let layout:UICollectionViewFlowLayout =  GridLayout()
-		
 
 		layout.itemSize = CGSize(width: 200, height: 200)
 		layout.sectionInset = UIEdgeInsets(top: 150, left: 150, bottom: 50, right: 150)
@@ -89,13 +89,15 @@ class ButtonCollectionViewController: UICollectionViewController {
 		return layout
 		
 	}
+	
+	@IBAction func unwindToButtonView(segue: UIStoryboardSegue) {}
+	
 
     // MARK: UICollectionViewDelegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cameraVC: CameraViewController = storyboard?.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
-//        let navController = UINavigationController(rootViewController: cameraVC)
         self.navigationController?.pushViewController(cameraVC, animated: true)
         
     }
